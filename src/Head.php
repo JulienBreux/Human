@@ -6,7 +6,7 @@ namespace Breux\Human;
  * Class Head
  * @package Breux\Human
  */
-class Head
+class Head implements \JsonSerializable
 {
-
+    use SerializableTrait;
 }

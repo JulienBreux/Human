@@ -28,6 +28,15 @@ class HumanTest extends TestCase
     }
 
     /**
+     * Test: Serialization
+     */
+    public function testSerialization()
+    {
+        $this->assertInstanceOf(\JsonSerializable::class, $this->human);
+        $this->assertJsonStringEqualsJsonString(json_encode($this->human), '{"Body":[],"Life":[]}');
+    }
+
+    /**
      * Test: Body accessors
      */
     public function testBodyAccessors()

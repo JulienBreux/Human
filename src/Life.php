@@ -6,7 +6,7 @@ namespace Breux\Human;
  * Class Life
  * @package Breux\Human
  */
-class Life
+class Life implements \JsonSerializable
 {
-
+    use SerializableTrait;
 }

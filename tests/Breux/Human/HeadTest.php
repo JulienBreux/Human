@@ -23,6 +23,14 @@ class HeadTest extends TestCase
     }
 
     /**
+     * Test: Serialization
+     */
+    public function testSerialization()
+    {
+        $this->assertInstanceOf(\JsonSerializable::class, $this->head);
+    }
+
+    /**
      * Test: Empty class
      * Note: Temp test
      */

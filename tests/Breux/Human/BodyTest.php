@@ -22,6 +22,15 @@ class BodyTest extends TestCase
     }
 
     /**
+     * Test: Serialization
+     */
+    public function testSerialization()
+    {
+        $this->assertInstanceOf(\JsonSerializable::class, $this->body);
+        $this->assertJsonStringEqualsJsonString(json_encode($this->body), '{"Head":[]}');
+    }
+
+    /**
      * Test: Head accessors
      */
     public function testHeadAccessors()

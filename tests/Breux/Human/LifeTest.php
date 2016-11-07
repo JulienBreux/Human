@@ -23,6 +23,14 @@ class LifeTest extends TestCase
     }
 
     /**
+     * Test: Serialization
+     */
+    public function testSerialization()
+    {
+        $this->assertInstanceOf(\JsonSerializable::class, $this->life);
+    }
+
+    /**
      * Test: Empty class
      * Note: Temp test
      */

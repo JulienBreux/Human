@@ -9,12 +9,9 @@ use Breux\Human\{
     Head
 };
 
-$human = new Human(
+echo json_encode(new Human(
     new Body(
         new Head
     ),
     new Life
-);
-
-echo json_encode($human);
-//var_dump($human);
+), JSON_PRETTY_PRINT);

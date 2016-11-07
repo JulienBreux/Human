@@ -6,8 +6,10 @@ namespace Breux\Human;
  * Class Body
  * @package Breux\Human
  */
-class Body
+class Body implements \JsonSerializable
 {
+    use SerializableTrait;
+
     /** @var Head */
     protected $head;
 
