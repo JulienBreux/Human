@@ -1,5 +1,7 @@
 # :boy: Human
 
+[![Build Status](https://travis-ci.org/JulienBreux/Human.png?branch=master)](https://travis-ci.org/JulienBreux/Human)
+
 This tiny library it's only used for testing CI pipeline.
 
 ## License
