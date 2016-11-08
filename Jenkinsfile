@@ -8,6 +8,9 @@ node {
         def app  = docker.build 'julienbreux/human'
 
         app.inside {
+            stage "Checkout and build dependencies"
+                sh "composer install"
+
             stage "Test"
                 sh "phpunit --log-junit reports/phpunit/phpunit.xml"
                 junit "reports/**/*.xml"
