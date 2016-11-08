@@ -1,7 +1,7 @@
 node {
     stage "Prepare environment"
         checkout scm
-        def environment  = docker.build 'cloudbees-node'
+        def environment  = docker.build 'julienbreux/human:latest'
 
         environment.inside {
             stage "Checkout and build deps"
