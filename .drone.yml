@@ -1,0 +1,8 @@
+image: bureauxapartager/php:7.x
+script:
+  - composer install
+  - phpunit
+notify:
+  email:
+    recipients:
+      - julien.breux@gmail.com
